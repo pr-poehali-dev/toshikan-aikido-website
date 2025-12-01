@@ -63,9 +63,10 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				minimal: {
-					black: '#0a0a0a',
-					gray: '#f5f5f5',
-					white: '#ffffff'
+					black: '#000000',
+					red: '#FF0000',
+					white: '#ffffff',
+					gray: '#f5f5f5'
 				}
 			},
 			borderRadius: {

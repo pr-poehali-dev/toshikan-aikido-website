@@ -345,9 +345,23 @@ const Index = () => {
             </TabsList>
             <TabsContent value="photos">
               <div className="grid md:grid-cols-3 gap-6">
-                {[1, 2, 3, 4, 5, 6].map((item) => (
-                  <div key={item} className="aspect-square bg-gradient-to-br from-primary/30 to-accent/30 rounded-2xl flex items-center justify-center text-6xl hover:scale-105 transition-all border-2 border-primary/20 hover:border-primary/50">
-                    🥋
+                {[
+                  'https://cdn.poehali.dev/projects/91839e04-a5a6-43cf-bc53-5fd2013e1bf1/files/81d0d555-7bbd-44d4-9ad1-2874fe6b0583.jpg',
+                  'https://cdn.poehali.dev/projects/91839e04-a5a6-43cf-bc53-5fd2013e1bf1/files/70927308-cfdb-49f9-9b13-3d594abe02f7.jpg',
+                  'https://cdn.poehali.dev/projects/91839e04-a5a6-43cf-bc53-5fd2013e1bf1/files/41934713-2ce1-4809-b479-e61ab3eaf5de.jpg',
+                  'https://cdn.poehali.dev/projects/91839e04-a5a6-43cf-bc53-5fd2013e1bf1/files/81d0d555-7bbd-44d4-9ad1-2874fe6b0583.jpg',
+                  'https://cdn.poehali.dev/projects/91839e04-a5a6-43cf-bc53-5fd2013e1bf1/files/70927308-cfdb-49f9-9b13-3d594abe02f7.jpg',
+                  'https://cdn.poehali.dev/projects/91839e04-a5a6-43cf-bc53-5fd2013e1bf1/files/41934713-2ce1-4809-b479-e61ab3eaf5de.jpg'
+                ].map((imageUrl, idx) => (
+                  <div 
+                    key={idx} 
+                    className="aspect-square rounded-2xl overflow-hidden hover:scale-105 transition-all border-2 border-primary/20 hover:border-primary/50 cursor-pointer group"
+                  >
+                    <img 
+                      src={imageUrl} 
+                      alt={`Тренировка TOSHIKAN ${idx + 1}`}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
                   </div>
                 ))}
               </div>

@@ -62,16 +62,16 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				neon: {
-					lime: '#D4FF00',
-					purple: '#8B5CF6',
-					pink: '#FF006E'
+				minimal: {
+					black: '#0a0a0a',
+					gray: '#f5f5f5',
+					white: '#ffffff'
 				}
 			},
 			borderRadius: {
-				lg: 'var(--radius)',
-				md: 'calc(var(--radius) - 2px)',
-				sm: 'calc(var(--radius) - 4px)'
+				lg: '0',
+				md: '0',
+				sm: '0'
 			},
 			keyframes: {
 				'accordion-down': {
